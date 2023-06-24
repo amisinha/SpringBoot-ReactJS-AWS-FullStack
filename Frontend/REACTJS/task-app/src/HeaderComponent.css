@@ -1,0 +1,15 @@
+.navbar {
+    margin-bottom: 20px;
+  }
+  
+  .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .bg-dark {
+    background-color: #343a40 !important;
+  }
+  

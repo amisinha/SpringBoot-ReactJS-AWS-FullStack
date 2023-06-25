@@ -8,7 +8,7 @@ const HeaderComponent = () => {
             <nav className='navbar navbar-expand-md navbar-dark bg-dark'>
                 <div>
                 <a href = "https://google.com" className = "navbar-brand" >
-                        Tasks Management Application
+                        Interview Experience Portal
                 </a>
                 </div>
 

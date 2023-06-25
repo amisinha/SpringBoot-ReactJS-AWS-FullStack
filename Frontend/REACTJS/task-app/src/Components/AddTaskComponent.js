@@ -66,14 +66,14 @@ const AddTaskComponent = () => {
         <div className='container'>
             <div className='row'>
                 <div className='card'>
-                    <h2 className='text-center'>Add New Task</h2>
+                    <h2 className='text-center'>Add Your Experience</h2>
                     <div className='card-body overflow-auto' style={{ maxHeight: '400px' }}>
                         <form>
                             <div className='form-group mb-2'>
-                            <label className = "form-label"> Title :</label>
+                            <label className = "form-label"> Company Name :</label>
                                     <input
                                         type = "text"
-                                        placeholder = "Title"
+                                        placeholder = "company name"
                                         name = "title"
                                         className = "form-control"
                                         value = {title}
@@ -82,10 +82,10 @@ const AddTaskComponent = () => {
                                     </input>
                             </div>
                             <div className='form-group mb-2'>
-                            <label className = "form-label"> Description :</label>
+                            <label className = "form-label"> Position :</label>
                                     <input
                                         type = "text"
-                                        placeholder = "Description"
+                                        placeholder = "Position"
                                         name = "description"
                                         className = "form-control"
                                         value = {description}
@@ -94,10 +94,10 @@ const AddTaskComponent = () => {
                                     </input>
                             </div>
                             <div className='form-group mb-2'>
-                            <label className = "form-label"> Status :</label>
+                            <label className = "form-label"> Interview Experience :</label>
                                     <input
                                         type = "text"
-                                        placeholder = "Status"
+                                        placeholder = "experience"
                                         name = "status"
                                         className = "form-control"
                                         value = {status}
@@ -106,10 +106,10 @@ const AddTaskComponent = () => {
                                     </input>
                             </div>
                             <div className='form-group mb-2'>
-                            <label className = "form-label"> Assignee :</label>
+                            <label className = "form-label"> Job Offered :</label>
                                     <input
                                         type = "text"
-                                        placeholder = "Assignee"
+                                        placeholder = "Yes/No"
                                         name = "assignee"
                                         className = "form-control"
                                         value = {assignee}

@@ -1,98 +1,70 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
+# Interview Experience Portal
+
+The Interview Experience Portal is a web application aimed at helping people learn from the interview experiences of others. It provides a platform where users can share their interview experiences and browse through experiences shared by others, thus gaining insights and knowledge about various companies, job positions, and interview processes.
+
+## Features
+
+- Post and view interview experiences
+- Upvote or downvote experiences to indicate their helpfulness
+
+## Technologies Used
+
+- Backend: Spring Boot with Java
+- Frontend: ReactJS
+
+## Deployment
+
+The project can be deployed to AWS using the following steps:
+
+### Backend Deployment (EC2 and RDS):
+
+1. Set up an AWS account and create an EC2 instance for hosting the backend server.
+2. Connect to the EC2 instance using SSH.
+3. Install Java and any other required dependencies on the EC2 instance.
+4. Clone the project repository from GitHub onto the EC2 instance.
+5. Configure the backend application properties file to connect to the RDS instance.
+6. Build the backend using Maven and package it as a JAR file.
+7. Start the backend server by running the JAR file.
+8. Ensure that the necessary inbound and outbound security group rules are configured for the EC2 instance and RDS instance to allow appropriate traffic.
+
+### Frontend Deployment (S3):
+
+1. Set up an S3 bucket in AWS for hosting the frontend files.
+2. Build the frontend using `npm` or `yarn` and create the optimized production build.
+3. Upload the frontend build files to the S3 bucket.
+4. Configure the S3 bucket to allow public read access to the frontend files.
+5. Enable static website hosting on the S3 bucket and note the provided endpoint URL.
+
+### Connecting Backend and Frontend:
+
+1. In the backend application properties file, set the frontend endpoint URL to the S3 bucket endpoint URL.
+2. Rebuild the backend application and redeploy it to the EC2 instance.
+3. Access the deployed application by using the EC2 instance's public IP address or domain name.
+
+Please note that these instructions provide a general overview of the deployment process, and you may need to customize them based on your specific project requirements and AWS configurations. Ensure that you follow AWS best practices for security, permissions, and networking when deploying your application.
+
+For more detailed instructions and guidance on deploying to AWS, refer to the AWS documentation or seek additional resources specific to deploying Spring Boot applications, configuring RDS, and hosting static files on S3.
+
+Remember to adjust these instructions based on your specific setup and requirements.
 
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+## Development Setup
 
-  <h3 align="center">Task Management System</h3>
+To set up the project for local development, follow these steps:
 
-  <p align="center">
-    FullStack Project
-    <br />
-  </p>
-</div>
+1. Clone the project repository from GitHub.
+2. Set up the backend by importing the project into your preferred IDE (such as IntelliJ or Eclipse).
+3. Configure the backend database settings in the application properties file.
+4. Build and run the backend server.
+5. Set up the frontend by navigating to the frontend directory in your terminal.
+6. Install the frontend dependencies using `npm install` or `yarn install`.
+7. Start the frontend development server using `npm start` or `yarn start`.
+8. Access the development server at `http://localhost:3000` in your web browser.
 
+## Contributing
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+Contributions to the Interview Experience Portal are welcome! If you would like to contribute to the project, please follow the guidelines outlined in the CONTRIBUTING.md file.
 
+## License
 
-Task Management System using SpringBoot backend and ReactJS frontend
-
-
-
-### Built With
-
-* [![React][React.js]][React-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name -  amishasinha84@gmail.com
-
-Project Link: https://github.com/amisinha
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-
+This project is licensed under the [MIT License](LICENSE).

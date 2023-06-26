@@ -36,16 +36,19 @@
 
 .btn-group {
   margin-top: 20px;
+  margin-left: 10px;
 }
 
 .btn-info {
   background-color: #5f81d4;
   color: #fff;
   border: none;
+  margin-left: 10px;
 }
 
 .btn-info:hover {
   background-color: #4267b2;
+  margin-right: 10px;
 }
 
 .btn-danger {
@@ -56,4 +59,12 @@
 
 .btn-danger:hover {
   background-color: #c82333;
+}
+
+.card.upvoted {
+  background: linear-gradient(135deg, #9eff9d, #00cf54);
+}
+
+.card.downvoted {
+  background: linear-gradient(135deg, #ff9a9a, #ff4141);
 }

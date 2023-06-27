@@ -2,10 +2,10 @@ package com.taskManager.Task.services.Impl;
 
 import com.taskManager.Task.Dto.TaskDto;
 import com.taskManager.Task.exception.ResourceNotFoundException;
+import com.taskManager.Task.mapper.TaskMapper;
 import com.taskManager.Task.model.Task;
 import com.taskManager.Task.repository.TaskRepository;
 import com.taskManager.Task.services.TaskService;
-import com.taskManager.Task.mapper.TaskMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

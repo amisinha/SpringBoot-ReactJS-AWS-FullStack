@@ -20,10 +20,9 @@ public class TaskServiceImpl implements TaskService {
     @Override
     public List<TaskDto> getAllTasks() {
         List<Task> tasks = taskRepository.findAll();
-        List<TaskDto> taskDtos = tasks.stream()
-                .map((task) -> TaskMapper.maptoTaskDto(task))
+        return tasks.stream()
+                .map(TaskMapper::maptoTaskDto)
                 .collect(Collectors.toList());
-        return taskDtos;
     }
     @Override
     public TaskDto createTask(TaskDto taskDto) {

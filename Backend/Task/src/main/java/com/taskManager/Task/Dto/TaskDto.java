@@ -10,7 +10,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TaskDto {
-    private long task_id;
+    private Long task_id;
     private String title;
     private String description;
     private String status;

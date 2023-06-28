@@ -6,6 +6,9 @@ The Interview Experience Portal is a web application aimed at helping people lea
 
 - Post and view interview experiences
 - Upvote or downvote experiences to indicate their helpfulness
+  
+## View
+![View of the Page](https://github.com/amisinha/SpringBoot-ReactJS-AWS-FullStack/blob/main/view.JPG)
 
 ## Technologies Used
 
@@ -61,10 +64,7 @@ To set up the project for local development, follow these steps:
 7. Start the frontend development server using `npm start` or `yarn start`.
 8. Access the development server at `http://localhost:3000` in your web browser.
 
-## Contributing
 
-Contributions to the Interview Experience Portal are welcome! If you would like to contribute to the project, please follow the guidelines outlined in the CONTRIBUTING.md file.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
+

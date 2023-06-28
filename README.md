@@ -14,6 +14,8 @@ The Interview Experience Portal is a web application aimed at helping people lea
 
 - Backend: Spring Boot with Java
 - Frontend: ReactJS
+- Backend Deployment: AWS RDS and EC2
+- Frontend Deployment: AWS S3
 
 ## Deployment
 

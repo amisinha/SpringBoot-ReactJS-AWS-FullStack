@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.util.Date;
 
 @Getter
@@ -17,12 +18,14 @@ import java.util.Date;
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long task_id;
+    private Long task_id;
 
+    @NotBlank
     private String title;
 
     private String description;
 
+    @NotBlank
     private String status;
 
     private  String assignee;

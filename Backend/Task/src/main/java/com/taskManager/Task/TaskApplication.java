@@ -10,11 +10,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TaskApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
-
 		SpringApplication.run(TaskApplication.class, args);
 	}
-	@Autowired
-	private TaskRepository taskRepository;
+//	@Autowired
+//	private TaskRepository taskRepository;
 
 	@Override
 	public  void  run(String... args) throws Exception {

@@ -2,10 +2,10 @@ package com.taskManager.Task.services.Impl;
 
 import com.taskManager.Task.Dto.TaskDto;
 import com.taskManager.Task.exception.ResourceNotFoundException;
+import com.taskManager.Task.mapper.TaskMapper;
 import com.taskManager.Task.model.Task;
 import com.taskManager.Task.repository.TaskRepository;
 import com.taskManager.Task.services.TaskService;
-import com.taskManager.Task.mapper.TaskMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -20,10 +20,9 @@ public class TaskServiceImpl implements TaskService {
     @Override
     public List<TaskDto> getAllTasks() {
         List<Task> tasks = taskRepository.findAll();
-        List<TaskDto> taskDtos = tasks.stream()
-                .map((task) -> TaskMapper.maptoTaskDto(task))
+        return tasks.stream()
+                .map(TaskMapper::maptoTaskDto)
                 .collect(Collectors.toList());
-        return taskDtos;
     }
     @Override
     public TaskDto createTask(TaskDto taskDto) {
